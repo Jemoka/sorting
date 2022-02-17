@@ -195,7 +195,7 @@ fn radix_sort(list:&[u32]) -> Vec<u32> {
 const MECHANISM:(&str, &dyn Fn(&[u32]) -> Vec<u32>) = ("radix", &radix_sort);
 
 // Define the max number of steps to have
-const STEPS:usize = 10;
+const STEPS:usize = 100;
 
 fn main() {
     for i in 1..STEPS+1  {
